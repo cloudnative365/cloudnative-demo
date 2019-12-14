@@ -1,10 +1,4 @@
 #!/bin/bash -ex
-# curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-# cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
-# deb http://apt.kubernetes.io/ kubernetes-xenial main
-# EOF
-# apt-get update
-# apt-get install -y kubelet kubeadm kubectl docker.io
 
 ##########################
 # Pre-configuration for OS
@@ -84,3 +78,5 @@ apt-get update && apt-get install -y \
 # kubeadm init phase addon all
 # kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 # kubectl apply -f https://docs.projectcalico.org/v3.10/manifests/calico.yaml
+# git clone https://github.com/kubernetes-sigs/metrics-server.git
+# kubectl create -f metrics-server/deploy/1.8+/
