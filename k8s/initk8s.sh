@@ -80,3 +80,4 @@ apt-get update && apt-get install -y \
 # kubectl apply -f https://docs.projectcalico.org/v3.10/manifests/calico.yaml
 # git clone https://github.com/kubernetes-sigs/metrics-server.git
 # kubectl create -f metrics-server/deploy/1.8+/
+# --kubelet-insecure-tls
