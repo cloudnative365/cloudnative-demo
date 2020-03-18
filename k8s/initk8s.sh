@@ -43,6 +43,7 @@ cat > /etc/docker/daemon.json <<EOF
     "max-size": "100m"
   },
   "storage-driver": "overlay2"
+  "registry-mirrors": ["https://gvfjy25r.mirror.aliyuncs.com"]
 }
 EOF
 
